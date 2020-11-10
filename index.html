@@ -219,7 +219,7 @@
         recognition = new webkitSpeechRecognition();
         recognition.continuous = true;
         recognition.maxAlternatives = 5;
-        recognition.onresult = ({results}) => onCommand(results);
+        //recognition.onresult = ({results}) => onCommand(results);
         recognition.onerror = () => setTimeout(tryAgain, 500);
         recognition.start();
 
