@@ -107,7 +107,8 @@
             let raycaster = document.querySelector('[ar-raycaster]');
             let marker = document.querySelector('#intersection');
             activateFox();
-
+            activateDino();
+            
             raycaster.addEventListener('raycaster-intersection', function (event) {
                 const intersection = event.detail.intersections[0]; //.find(i => i.object.type === 'Scene');
                 if (intersection) {
